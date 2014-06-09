@@ -7,6 +7,9 @@ CREATE TABLE versions
   registry_url text,
   mesos_url text,
   marathon_url text,
+  tag varchar(255),
+  travis_status integer,
+  registry_status integer,
   deployed boolean,
   deployer integer REFERENCES users( id ) ON DELETE CASCADE
 )

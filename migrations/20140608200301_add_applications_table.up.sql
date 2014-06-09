@@ -6,6 +6,8 @@ CREATE TABLE applications (
   registry_url text,
   marathon_url text,
   mesos_url text,
+  image_name varchar(255), 
+  command varchar(255),
   created_at timestamp,
   updated_at timestamp
 )
