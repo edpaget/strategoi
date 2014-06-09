@@ -16,4 +16,6 @@
                  [com.stuartsierra/component "0.2.1"]
                  [org.clojure/java.jdbc "0.3.3"]
                  [postgresql/postgresql "9.3-1101.jdbc4"]]
+  :ragtime  {:migrations ragtime.sql.files/migrations
+             :database "jdbc:postgresql://localhost:5433/strategoi?user=edward&password=edward"}
   :profiles {:dev {:plugins [[ragtime/ragtime.lein "0.3.7"]]}})
