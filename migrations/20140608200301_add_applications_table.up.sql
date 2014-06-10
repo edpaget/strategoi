@@ -7,6 +7,10 @@ CREATE TABLE applications (
   marathon_url text,
   mesos_url text,
   image_name varchar(255), 
+  health_check_url varchar(127),
+  cpus decimal(4,2),
+  memory integer,
+  instances integer,
   command varchar(255),
   created_at timestamp,
   updated_at timestamp
